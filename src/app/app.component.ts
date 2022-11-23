@@ -1,3 +1,4 @@
+import { CarroService } from './carro.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RequestAPI';
+
+  constructor(
+    private carroservice: CarroService
+  ) { }
+
+  obterTodosCarros() {
+    
+  }
 }
